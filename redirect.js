@@ -7,22 +7,22 @@ http.createServer(function (req, res) {
   switch (counter) {
     
     case 0:
-      res.writeHead(301, { Location: 'http://www.google.com/' }); //link 1
+      res.writeHead(301, { Location: 'http://www.google.com/' , 'Cache-Control': 'no-cache'}); //link 1
       res.end('Redirecting!');
       break;
       
     case 1:
-      res.writeHead(301, { Location: 'http://www.apple.com/' }); //link 2
+      res.writeHead(301, { Location: 'http://www.apple.com/' , 'Cache-Control': 'no-cache'}); //link 2
       res.end('Redirecting!');
       break;
       
     case 2:
-      res.writeHead(301, { Location: 'http://www.youtube.com/' }); //link 3
+      res.writeHead(301, { Location: 'http://www.youtube.com/' , 'Cache-Control': 'no-cache'}); //link 3
       res.end('Redirecting!');
       break;
       
     case 3:
-      res.writeHead(301, { Location: 'http://www.wordreference.com/' }); //link 4
+      res.writeHead(301, { Location: 'http://www.wordreference.com/' , 'Cache-Control': 'no-cache'}); //link 4
       res.end('Redirecting!');
       break;
 
